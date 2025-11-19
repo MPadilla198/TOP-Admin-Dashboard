@@ -58,12 +58,11 @@ aside>div>h1 {
 .icon {
     height: 32px;
     width: 32px;
-
 }
 
 aside .logo,
 aside .icon {
-    color: white;
+    filter: invert(100%);
 }
 
 /** HEADER STYLES */
@@ -73,5 +72,5 @@ header {
 
 /** SECTION STYLES */
 section {
-    background-color: dimgray;
+    background-color: lightgray;
 }
