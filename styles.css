@@ -8,7 +8,8 @@
 }
 
 :root {
-    --primary-color: DodgerBlue
+    --primary-color: DodgerBlue;
+    --gray: lightgray;
 }
 
 html {
@@ -19,7 +20,7 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 2fr 7fr;
+    grid-template-columns: 2fr 11fr;
     grid-template-rows: 2fr 9fr;
 }
 
@@ -70,7 +71,54 @@ header {
     background-color: white;
 }
 
+.nav-bar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 32px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    justify-items: start;
+    gap: 16px;
+}
+
+.search>img {
+    justify-self: end;
+}
+
+.search>input {
+    width: 80%;
+    height: 32px;
+    border-radius: 16px;
+    border-style: none;
+    background-color: var(--gray);
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+    justify-content: end;
+}
+
+.profile-bar {
+
+}
+
+.profile-picture {
+    height: 52px;
+    width: 52px;
+}
+
+.profile-picture-main {
+    height: 72px;
+    width: 72px;
+}
+
 /** SECTION STYLES */
 section {
-    background-color: lightgray;
+    background-color: var(--gray);
 }
