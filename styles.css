@@ -7,6 +7,71 @@
     font-display: swap;
 }
 
+:root {
+    --primary-color: DodgerBlue
+}
+
 html {
     font-family: Roboto;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    grid-template-rows: 2fr 9fr;
+}
+
+/** ASIDE STYLES */
+
+aside {
+    background-color: var(--primary-color);
+    display: grid;
+
+    justify-content: start;
+    align-content: start;
+    gap: 3vh;
+    grid-row: 1 / 3;
+}
+
+aside>div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    justify-items: center;
+    align-items: center;
+
+    color: white;
+}
+
+aside>div>h2,
+aside>div>h1 {
+    justify-self: start;
+}
+
+.logo {
+    height: 56px;
+    width: 56px;
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+
+}
+
+aside .logo,
+aside .icon {
+    color: white;
+}
+
+/** HEADER STYLES */
+header {
+    background-color: white;
+}
+
+/** SECTION STYLES */
+section {
+    background-color: dimgray;
 }
